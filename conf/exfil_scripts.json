@@ -1,0 +1,7 @@
+{
+	"wifi_key_grabber": {
+		"desc": "Extracts All WiFi Passwords and Uploads to your Discord WEBHOOK",
+		"sftp": 0
+	}
+
+}

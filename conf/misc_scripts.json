@@ -1,0 +1,27 @@
+{
+	"WALLPAPER_CHANGER": {
+		"desc": "Changes Wallpaper of Target Machine",
+		"url": 1,
+		"server": 0
+	},
+	"FORK_BOMB": {
+		"desc": "Make Windows Unresponsive using a .bat Script ( 100% CPU and RAM Usage )",
+		"url": 0,
+		"server": 0
+	},
+	"WALLPAPER_PRANK": {
+		"desc": "Takes a screenshot of desktop and saves it as wallpaper)",
+		"url": 0,
+		"server": 0
+	},
+	"DISABLE_DEFFENDER": {
+		"desc": "Disables Windows Defender Service on Target Machine",
+		"url": 0,
+		"server": 0
+	},
+	"SPEAK": {
+		"desc": "CONVERTS YOUR INPUTED TEXT TO SPEECH",
+		"url": 0,
+		"server": 1
+	}
+}
