@@ -67,7 +67,7 @@ def misc_output(script_path, chosen, url_state, server_state):
 		with open(base_path, 'r') as file :
 			filedata = file.read()
 
-		filedata = filedata.replace('URL', misc.misc_url)
+		filedata = filedata.replace('URL', MISCELLANEOUS.misc_url)
 
 		with open('output/{}'.format(chosen), 'w') as file:
 			file.write(filedata)

