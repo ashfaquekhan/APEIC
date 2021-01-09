@@ -1,5 +1,5 @@
 # APEIC
-    Command line based framework to generate DigiSpark BadUSB  scripts
+   Command line based framework to generate DigiSpark BadUSB  scripts
     HOW TO INSTALL(WINDOWS):
     1. Download Git from here and install it https://git-scm.com/downloads
     2. Download and install python on your pc (https://www.python.org/ftp/python/3.8.7/python-3.8.7-amd64.exe), remeber to select and mark "ADD TO PATH" check box while installing.
