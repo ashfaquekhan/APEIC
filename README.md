@@ -9,4 +9,8 @@
    6. You can also use "dir" command to see whats inside the APEIC folder.
    7. Last step is to run the main program in your terminal, to do so type "python codename.py"
    THATS ALL YOU ARE THERE .
+# DIGISTUMP DRIVERS 
+   https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip -- download the drivers from here
+   Board manager URL: http://digistump.com/package_digistump_index.json
+  
    
