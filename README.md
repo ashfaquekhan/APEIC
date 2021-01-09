@@ -11,6 +11,7 @@
    THATS ALL YOU ARE THERE .
 # DIGISTUMP DRIVERS 
    https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip -- download the drivers from here
-   Board manager URL: http://digistump.com/package_digistump_index.json
+      
+    Board manager URL: http://digistump.com/package_digistump_index.json
   
    
