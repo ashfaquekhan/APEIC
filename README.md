@@ -4,7 +4,9 @@
    1. Download Git from here and install it https://git-scm.com/downloads
    2. Download and install python on your pc (https://www.python.org/ftp/python/3.8.7/python-3.8.7-amd64.exe), 
       remeber to select and mark "ADD TO PATH" check box while installing.
-      ![alt text](https://docs.blender.org/manual/en/latest/_images/about_contribute_install_windows_installer.png)
+
+![alt text](https://docs.blender.org/manual/en/latest/_images/about_contribute_install_windows_installer.png)
+
    3. Open Command Prompt (WIN + R then press ENTER) 
    4. Download the repo, and to do so type this "git clone https://github.com/ashfaquekhan/APEIC.git" and press ENTER
    5. After the repo is downloaded, type this command "cd APEIC" to link the command line to that path.
