@@ -1,6 +1,6 @@
 import os
 import json
-
+import shutil
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
@@ -72,7 +72,8 @@ def misc_output(script_path, chosen, url_state, server_state):
 		with open('output/{}'.format(chosen), 'w') as file:
 			file.write(filedata)
 	else:
-		os.system('cp {} {}'.format(base_path, outfile_path))
+    		shutil.copyfile(base_path, outfile_path)
+	    #os.system('cp {} {}'.format(base_path, outfile_path))
 	
 	if server_state == 1:
 		with open(base_path, 'r') as file :
