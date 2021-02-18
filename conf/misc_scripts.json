@@ -28,5 +28,10 @@
 		"desc": "PLAYS YOUR INPUTED YOUTUBE LINK (By default - RickAstrey Song [PRESS 0 IF U DO NOT HAVE A LINK])",
 		"url": 1,
 		"server": 0
+	},
+	"CRAZY_MOUSE": {
+		"desc": "CHANGES THE MOUSE PROPERTIES AND MAKES THE MOUSE LOOK HIGH AFCK",
+		"url": 0,
+		"server": 0
 	}
 }
