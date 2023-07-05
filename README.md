@@ -1,4 +1,5 @@
 # APEIC
+   <img width="960" alt="image" src="https://github.com/ashfaquekhan/APEIC/assets/42895491/9b36e65f-a893-4721-b84b-9ef390276fd9">
    Command line based framework to generate DigiSpark BadUSB  scripts
    HOW TO INSTALL(WINDOWS):
    1. Download Git from here and install it https://git-scm.com/downloads
